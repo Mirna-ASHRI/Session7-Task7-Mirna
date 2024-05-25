@@ -1,0 +1,328 @@
+/* * {
+    padding: 0;
+    margin: 0;
+}
+.parent {
+    display: flex;
+    background-color: tomato;
+    width:100%;
+    height:100vh;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction:column-reverse;
+}
+.child1 {
+background-color: blue;
+}
+.child2 {
+    background-color: red;
+}
+.child3 {
+    background-color:green;
+}
+.child4 {
+    background-color:yellow;
+}
+.child {
+    height: 200px;
+    width: 20%;
+} */
+
+* {
+    font-family: "Alegreya Sans";
+    font-size: 20px;
+    padding: 0px;
+    margin: 0px;
+}
+.home {
+    display: flex;
+    background-image: url(Welcome.jpg);
+    height: 110vh;
+    background-position: center center;
+    background-size: cover;
+    width: 100%;
+    justify-content: center;
+    justify-items: center;
+}
+.home .navbar{
+    background-color: rgb(227, 210, 187);
+    height: 50px;
+    opacity: 85%;
+    font-weight: 600;
+    padding: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    z-index: 999; 
+    width: 100%; 
+    flex-direction: row;
+    float: right;
+    margin-right: 50px;
+}
+
+.home .navbar .navlogo img{
+    width: 300px;
+    float: left;
+    margin-left: 50px;
+}
+.navmenu ul{
+    opacity: 100%;
+    list-style: none;
+    padding-left: 50px;
+    display: flex ;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 600px; 
+}
+.navmenu ul li a{
+    transition-duration: 0.5s;
+}
+.navmenu ul li a:hover{
+    color: rgb(195, 149, 88);
+}
+.navbar .navmenu li{
+    display: flex;
+}
+.navbar .navmenu li a{
+    text-decoration: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-content: flex-end;
+    flex-wrap: nowrap;
+    color: white;
+    padding-left: 30px;
+}
+.home .caption{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: stretch;
+    flex-direction: column;
+    font-size: x-large;
+    color: white;
+    padding-top: 60px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+}
+.all-btn {
+ margin-top: 30px;  
+}
+
+.btn1{
+    visibility: visible;
+    padding: 20px 20px 20px 20px; 
+    letter-spacing: 0px;
+    font-size: 16px;
+    opacity: 100%;
+    color: white;
+    background-color: rgb(176, 127, 62);
+    border-radius: 5px;
+    transition-duration: 0.5s;
+}
+.btn1:hover{
+    opacity: 100%;
+    background-color:white;
+    color: black;
+}
+.btn2{
+    visibility: visible;
+    padding: 20px 20px 20px 20px; 
+    letter-spacing: 0px;
+    font-size: 16px;
+    opacity: 100%;
+    color: white;
+    background-color: transparent;
+    border: 2px solid white;
+    border-radius: 3px;
+    transition-duration: 0.5s;
+}
+.btn2:hover{
+    background-color:white;
+    color: black;
+}
+ul.no-bull {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+#who-we-are {
+    margin-top: 20px;
+    background-color: white;
+    display: flex;
+    align-content: space-between;
+    width:100%;
+    gap: 40px;
+    justify-content: center;
+    align-items: stretch;
+    /* padding: -50px; */
+    text-align: justify;
+}
+#who-we-are .text{
+    margin-right: 30px;
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+}
+#who-we-are .image{
+    margin-left: 50px;
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.our-location{
+    margin-top: 20px;
+    background-color: rgb(236, 233, 233);
+    display: flex;
+    align-content: space-between;
+    width:100%;
+    gap: 40px;
+    justify-content: center;
+    align-items: stretch;
+}
+.our-b{
+    margin-left: 50px;
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    flex-direction: column;
+    align-items: center;
+    text-align: justify;
+}
+.our-location .our{
+    margin-left: 50px;
+}
+.our-location .img-loc{
+    margin-right: 90px;
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.our-b-b{
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    margin-top: 40px;
+    flex-direction: column;
+    align-items: center;
+    text-align: justify;
+}
+.our-baking{
+    margin-top: 50px;
+    background-color: white;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    align-items: stretch;
+    align-content: space-evenly;
+    justify-content: space-evenly;
+    width: 100%;
+    background-position: center center;
+    background-size: cover;
+    padding-top: 20px;
+    padding-bottom: 50px;
+}
+.our-baking .superior, .our-baking .bagels, .our-baking .cookies{
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+.our-baking .superior{
+    margin-left: 50px;
+}
+.our-baking .cookies{
+    margin-right: 50px;
+}
+.contact-map {
+    margin-top: 20px;
+    background-color: rgb(236, 233, 233);
+    display: flex;
+    align-content: space-between;
+    width:100%;
+    gap: 40px;
+    justify-content: center;
+    align-items: stretch;
+}
+.contact{
+    margin-left: 80px;
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+}
+.map{
+    margin-right: 80px;
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+.brown-foot{
+    background-color: rgb(69, 64, 61);
+    color: white;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    align-items: stretch;
+    align-content: center;
+    justify-content: space-between;
+    width: 100%;
+    background-position: center center;
+    background-size: cover;
+    padding-top: 20px;
+    padding-bottom: 50px;
+}
+.about{
+    margin-left: 70px;
+    width: 20%;
+    margin-top: 40px;
+}
+.special{
+    width: 20%;
+    margin-top: 40px;
+}
+.Hours{
+    width: 20%;
+    margin-top: 40px;
+}
+.Contact-det{
+    width: 20%;
+    margin-top: 40px;
+    margin-right: 70px;
+}
+.icon-list3-text{
+    font-size: medium;
+}
+.footer{
+    background-color: rgb(57, 51, 47);
+    background-position: center center;
+    background-size: cover;
+    width: 100%;
+    text-align: center;
+    margin-right: auto;
+    margin-left: auto;
+}
+.foot-in{
+    align-content: center;
+    margin-bottom: 10px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.social-media{
+    margin-top: 10px;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    flex-direction: row;
+}
